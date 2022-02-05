@@ -51,7 +51,7 @@ while True :
                     cv2.line(img, (x1,y1), (x2,y2), (255,0,255),3)
                     cv2.circle(img, ((x2+x1)//2, (y2+y1)//2), 5, (255, 0, 0), cv2.FILLED)
 
-
+            # Hand Draw and Painting
             mpDraw.draw_landmarks(img, handLms, mpHands.HAND_CONNECTIONS,
                                   mp_drawing_styles.DrawingSpec(color=(0,0,255)),
                                   mp_drawing_styles.DrawingSpec(color=(0,255,0)))
